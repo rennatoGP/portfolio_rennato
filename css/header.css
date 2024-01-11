@@ -1,0 +1,229 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color1: #ff3366;
+    --color2: #6633ff;
+    --color7: #394551;
+    --color8: #ffffff;
+    /* haronia de tons quente */
+    --colorQ1:#FF4500;
+    --colorQ2:#FFD700;
+    --colorQ3:#FF6347;
+    /* Contastre vibrante */
+    --colorV1:#00CED1;
+    --colorV2:#8A2BE2;
+    --colorV3:#32CD32 ;
+    /* tons Neutros */
+    --colorN1:#808080;
+    --colorN2:#A9A9A9;
+    --coloN3:#D3D3D3;
+    /* gradient */
+    --gradiente:linear-gradient(to right, #ff0080, #ff8c00);
+    --gradiente2:linear-gradient(to right, #48AFBE, #BE6C48);
+}
+
+body {
+    background-color:white;
+    box-sizing: border-box;
+}
+
+/* ======================= header ==============*/
+.content {
+    width: 100%;
+    /* height: 100vh; */
+    height: min-content;
+    background: url(/img/background-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* ============================ formatacão da descricão do portfolio ===============*/
+
+.descricao_header{
+}
+.content_description {
+    max-width: 100%;
+    padding: 50px;
+    color: var(--color8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.content_description h1 {
+    font-weight: bolder;
+    position: relative;
+    font-size: 70px;
+    color: var(--color8);
+    
+}
+
+.content_description h2 {
+    font-weight: 600;
+}
+
+.content_description p {
+    width: 600px;
+    line-height: 1.4;
+}
+
+.content_description span {
+    transition: .3s;
+}
+
+/* .content_description span:hover {
+    color: var(--color1);
+} */
+
+.logo_img {
+    width: 140px;
+    height: 140px;
+    border-radius: 6px;
+    background-color: var(--color7);
+}
+
+/*=============================== formatão menu  ================  */
+.content_menu {
+    position: sticky;
+    top: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--gradiente2);
+    
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+
+.menu {
+    margin-right: 50px;
+}
+
+.logo_portfolio {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-bottom: 0;
+    color: var(--color8);
+}
+
+.menu-header {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-header li {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: var(--color8);
+    transition: .4s;
+}
+
+.menu-header li:hover {
+    border-radius: 5px;
+    color: var(--color1);
+    background-color: var(--color8);
+}
+
+.menuResponsivo {
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+.menuResponsivo::before {
+    color: var(--color8);
+    content: 'Menu';
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.menuResponsivo.active::before {
+    content: 'Close';
+}
+
+@media (max-width: 1030px) {
+   
+    .menu-header {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .content_description {
+        padding: 10px 20px;
+    }
+    .content_description h1{
+        font-size: 40px;
+    }
+
+    .menu-header {
+        display: block;
+        padding: 0;
+    }
+
+    .menuResponsivo {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .menu-header {
+        position: absolute;
+        top: 45px;
+        padding: 0;
+        background-color: var(--color8);
+        left: -100%;
+    }
+    .menu-header li {
+        padding: 0;
+        transform: translateX(-100%);
+        opacity: 0;
+        background-color: var(--color8);
+        color: var(--color7);
+        transition: .4s;
+
+    }
+    .menu.active .menu-header{
+        left: 0;
+    }
+    .menu.active .menu-header li {
+        padding: 15px 30px;
+        transform: translateX(0px);
+        transition-delay: calc(.1s * var(--i));
+        opacity: 1;
+    }
+
+    .menu {
+        width: 100%;
+        position: absolute;
+    }
+
+}
+
+@media (max-width: 650px) {
+    
+    .content_description p {
+        width: 100%;
+    }
+
+    .logo_portfolio {
+        display: none;
+    }
+
+}
+

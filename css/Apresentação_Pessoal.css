@@ -1,0 +1,229 @@
+/*=============== Person Presentation ============*/
+
+.Content_Presention {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 130px;
+    padding: 20px;
+}
+
+.contet_description {
+    width: 100%;
+    padding:0  20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+
+}
+
+.contet_description h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.contet_description h1 span {
+    background: var(--gradiente);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.description h3 {
+    font-size: 22px;
+    margin-top: .5rem;
+    font-weight: 600;
+
+}
+
+.description p {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 20px 0;
+    text-align: justify;
+
+
+}
+
+.content_animet_Presention {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    overflow: hidden;
+    background: var(--gradiente);
+}
+
+/* ========================= formatação circle================= */
+
+.borda_cicle {
+    width: 330px;
+    height: 330px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: -200px;
+    border: 10px solid var(--color8);
+    background: var(--gradiente);
+    animation: girarInfinito 13s ease-out infinite;
+}
+
+@keyframes girarInfinito {
+
+    0%,
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25%,
+    45% {
+        transform: rotate(-90deg);
+    }
+
+    50%,
+    70% {
+        transform: rotate(-180deg);
+    }
+
+    75%,
+    95% {
+        transform: rotate(-270deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.borda_cicle h1 {
+    padding: 0 20px;
+    font-size: 40px;
+    position: relative;
+    color: var(--color1);
+    font-weight: bolder;
+    background-color: var(--color8);
+}
+
+.center {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top h1 {
+    transform: rotate(90deg);
+    top: -180px;
+}
+
+.item1 h1 {
+    left: -40px;
+}
+
+
+.item2 h1 {
+    transform: rotate(180deg);
+    right: -40px;
+}
+
+.fundo h1 {
+    transform: rotate(-90deg);
+    bottom: -140px;
+
+}
+
+@media (max-width: 1030px) {
+    .Content_Presention {
+        display: block;
+        
+    }
+    .contet_description{
+        margin-top: 20px;
+    }
+
+}
+
+/* ============ formatação do button ============= */
+.btn_information {
+    width: 100%;
+    padding: 15px 5px;
+    background-color: var(--color1);
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #ff8c00, #ff0080);
+
+
+}
+
+.btn_information::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: -0px;
+    bottom: 0;
+    transition: .6s;
+    background-color: #ff8c00;
+}
+
+.btn_information:hover::before {
+    width: 100%;
+
+}
+
+.btn_information::after {
+    content: 'Consulte para mais informações';
+    width: 100%;
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    transition: 1s;
+}
+
+/* ============== responsivo Person Presentation =============== */
+@media (max-width: 1030px) {
+    .Content_Presention {
+        display: block;
+    }
+
+    .contet_description {
+        padding: 5px;
+    }
+
+    .contet_description h1 {
+        font-size: 40px;
+        padding: 0;
+    }
+       
+}
+
+@media (max-width: 500px) {
+    .borda_cicle h1{
+        font-size: 30px;
+    }
+    .top h1{
+        top: -130px;
+    }
+    .item1 h1 {
+        left: 20px;
+    }
+    
+    
+    .item2 h1 {
+        right: 20px;
+    }
+    
+    .fundo h1 {
+        bottom: -130px;
+    
+    }
+}
