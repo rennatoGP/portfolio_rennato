@@ -44,6 +44,8 @@
 
 }
 
+
+/* ========================= formatação circle================= */
 .content_animet_Presention {
     width: 100%;
     display: flex;
@@ -54,7 +56,6 @@
     background: var(--gradiente);
 }
 
-/* ========================= formatação circle================= */
 
 .borda_cicle {
     width: 330px;
@@ -67,7 +68,6 @@
     flex-direction: column;
     right: -200px;
     border: 10px solid var(--color8);
-    background: var(--gradiente);
     animation: girarInfinito 13s ease-out infinite;
 }
 

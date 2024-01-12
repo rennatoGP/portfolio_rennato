@@ -27,6 +27,7 @@
     /* gradient */
     --gradiente:linear-gradient(to right, #ff0080, #ff8c00);
     --gradiente2:linear-gradient(to right, #48AFBE, #BE6C48);
+    --gradiente3:radial-gradient(circle, #48AFBE, #BE6C48);
 }
 
 body {
@@ -63,16 +64,18 @@ body {
     position: relative;
     font-size: 70px;
     color: var(--color8);
-    
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
 .content_description h2 {
     font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
 .content_description p {
     width: 600px;
     line-height: 1.4;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
 .content_description span {
