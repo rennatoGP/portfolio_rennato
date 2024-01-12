@@ -24,7 +24,7 @@
 
 .contet_description h1 span {
     background: var(--gradiente);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 

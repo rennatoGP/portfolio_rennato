@@ -5,9 +5,4 @@ list.addEventListener('click',function(){
    menu.classList.toggle('active');
 })
 
-// let ContentsubMenu = document.querySelector('.content__linkMenu')
-// let subMenu = document.querySelector('.subMenu') 
-// subMenu.addEventListener('click',function(){
-//    this.classList.toggle('active');
-//    ContentsubMenu.classList.toggle('active');
-// })
+

@@ -1,0 +1,15 @@
+.tecnologias{
+    padding: 0 30px;
+    margin-top: 40px;
+    padding-bottom: 400px;
+}
+.tecnologias  title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tecnologias h3,p{
+    text-align: center;
+    display: inline-block;
+}

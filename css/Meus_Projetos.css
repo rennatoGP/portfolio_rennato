@@ -2,14 +2,13 @@
 
 .content_Project h1 span{
     background: var(--gradiente);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
 .content_Project {
     padding: 0 30px;
     margin-top: 80px;
-    padding-bottom: 400px;
     display: flex;
     flex-direction: column;
     gap: 30px;
