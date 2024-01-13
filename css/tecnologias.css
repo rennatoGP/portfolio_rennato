@@ -1,4 +1,7 @@
 .tecnologias {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     padding: 0 30px;
     margin-top: 40px;
     padding-bottom: 400px;
@@ -18,19 +21,21 @@ p {
 }
 
 /* ============================== card tecnologia ================ */
-.tecnologias {
+
+.content_card_tecnologia{
     display: flex;
-    flex-direction: column;
-    gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 10px; */
 }
 
 .card_tecnologia{
-    width: 25%;
+    width: 23%;
     height: 370px;
     border-radius: 20px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
-    border-top: 6px solid var(--color2);
-    border-bottom: 6px solid var(--color2);
+    border-top: 6px solid var(--color7);
+    border-bottom: 6px solid var(--color7);
     position: relative;
     padding: 20px;
     display: flex;
@@ -44,7 +49,7 @@ p {
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15), -6px -6px 10px -1px rgba(0, 0, 0, .15);  
+    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15), -6px -6px 10px -1px rgba(0, 0, 0, .15);   */
 }
 
 .card_js{
@@ -64,10 +69,7 @@ p {
 .card_tecnologia:hover circle{
     animation: bordaProgresiva .7s linear forwards;
 }
-.card_tecnologia:hover .borde_card{
-    box-shadow: 1px 1px 20px var(--color8);
 
-}
 .card_tecnologia:hover h3, 
 .card_tecnologia:hover p{
     color: var(--color8);
@@ -104,6 +106,15 @@ p {
     transition: .7s;
     
 }
+.card_tecnologia:hover .borde_card{
+    box-shadow: 1px 1px 20px var(--color8);
+
+}
+
+.card_js:hover .borde_card{
+    box-shadow: 1px 1px 10px var(--color7);
+
+}
 
 .img_tecnologia {
     width: 100px;
@@ -111,9 +122,12 @@ p {
     border-radius: 50%;
     position: relative;
     padding: 20px;
-    box-shadow:inset 1px 1px 10px var(--color8);
-
+    box-shadow:inset 1px 1px 5px var(--color7);
    
+}
+.card_js:hover .img_tecnologia{
+    box-shadow: inset 1px 1px 10px var(--color7);
+
 }
 .img_tecnologia img{
     width: 100%;
@@ -123,7 +137,6 @@ p {
 .animet_fundo{
     width: 100%;
     height: 0%;
-    /* background-color:#F7DF1E; */
     position: absolute;
     bottom: 0;
     z-index: -1px;
@@ -143,4 +156,26 @@ p {
 }
 .card_node .animet_fundo{
     background-color:#8CC84B;
+}
+
+@media (max-width: 1250px){
+
+    .content_card_tecnologia{
+        gap: 40px;
+        justify-content: space-evenly;
+    }
+    .card_tecnologia{
+        width: 45%;
+    }
+
+}
+@media (max-width: 600px){
+    .content_card_tecnologia{
+        display: block;
+    }
+    .card_tecnologia{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
 }
