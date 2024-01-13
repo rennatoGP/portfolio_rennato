@@ -29,6 +29,7 @@
 .projeto-5 {
     height: 400px;
     border-radius: 2px;
+    background-color: var(--color1);
 
 }
 
@@ -41,25 +42,21 @@
 }
 
 .projeto-2 {
-    background-color: rgb(37, 156, 71);
     grid-column: 3;
     grid-row: 1;
 }
 
 .projeto-3 {
-    background-color: rgb(55, 57, 57);
     grid-column: 1;
     grid-row: 2;
 }
 
 .projeto-4 {
-    background-color: aqua;
     grid-column: 2;
     grid-row: 2;
 }
 
 .projeto-5 {
-    background-color: aqua;
     grid-column: 3;
     grid-row: 2;
 }
