@@ -27,7 +27,7 @@
     /* gradient */
     --gradiente: linear-gradient(to right, #ff0080, #ff8c00);
     --gradiente2: linear-gradient(to right, #48AFBE, #BE6C48);
-    --gradiente3: radial-gradient(circle, #48AFBE, #BE6C48);
+    --gradiente3: radial-gradient(circle, #ff8c00, #BE6C48);
 }
 
 body {

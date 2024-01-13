@@ -1,33 +1,146 @@
-.tecnologias{
+.tecnologias {
     padding: 0 30px;
     margin-top: 40px;
     padding-bottom: 400px;
 }
-.tecnologias  title{
+
+.tecnologias title {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tecnologias h3,p{
+
+.tecnologias h3,
+p {
     text-align: center;
     display: inline-block;
 }
+
 /* ============================== card tecnologia ================ */
-.tecnologias{
+.tecnologias {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
+
 .card_tecnologia{
-    width: 20%;
-    height: 300px;
+    width: 25%;
+    height: 370px;
     border-radius: 20px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
     border-top: 6px solid var(--color2);
     border-bottom: 6px solid var(--color2);
-    transition: 5s;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
-.card_tecnologia:hover{
-    background: linear-gradient(rgba(0, 0, 0, .1),var(--color2));
+.card_tecnologia circle {
+    fill: none;
+    /* stroke: url(#GradientColor); */
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15), -6px -6px 10px -1px rgba(0, 0, 0, .15);  
+}
+
+.card_js{
+    stroke:url(#GradientColor_js);
+}
+.card_html{
+    stroke: url(#GradientColor_html);
+}
+.card_css{
+    stroke: url(#GradientColor_css);
+
+}
+.card_node{
+    stroke: url(#GradientColor_node);
+
+}
+.card_tecnologia:hover circle{
+    animation: bordaProgresiva .7s linear forwards;
+}
+.card_tecnologia:hover .borde_card{
+    box-shadow: 1px 1px 20px var(--color8);
+
+}
+.card_tecnologia:hover h3, 
+.card_tecnologia:hover p{
+    color: var(--color8);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+}
+.card_tecnologia svg  {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+@keyframes bordaProgresiva {
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+/* fazer um ::before para animar o heigth no .card_tecnologia */
+
+.borde_card {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.borde_card,h3,p{
+    z-index: 1;
+    transition: .7s;
+    
+}
+
+.img_tecnologia {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    padding: 20px;
+    box-shadow:inset 1px 1px 10px var(--color8);
+
+   
+}
+.img_tecnologia img{
+    width: 100%;
+    height: 100%;
+
+}
+.animet_fundo{
+    width: 100%;
+    height: 0%;
+    /* background-color:#F7DF1E; */
+    position: absolute;
+    bottom: 0;
+    z-index: -1px;
+    transition: 1s;
+}
+.card_tecnologia:hover .animet_fundo {
+    height: 100%;
+}
+.card_js .animet_fundo {
+    background-color:#F7DF1E;
+}
+.card_html .animet_fundo{
+    background-color:#E34C26;
+}
+.card_css .animet_fundo{
+    background-color:#264de4;
+}
+.card_node .animet_fundo{
+    background-color:#8CC84B;
 }
