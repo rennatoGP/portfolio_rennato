@@ -4,7 +4,7 @@
     gap: 50px;
     padding: 0 30px;
     margin-top: 40px;
-    padding-bottom: 400px;
+    padding-top: 20px;
 }
 
 .tecnologias title {
@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.tecnologias h3,
+.tecnologias .title h3,
 p {
     text-align: center;
     display: inline-block;
@@ -22,14 +22,14 @@ p {
 
 /* ============================== card tecnologia ================ */
 
-.content_card_tecnologia{
+.content_card_tecnologia {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     /* gap: 10px; */
 }
 
-.card_tecnologia{
+.card_tecnologia {
     width: 23%;
     height: 370px;
     border-radius: 20px;
@@ -43,6 +43,7 @@ p {
     flex-direction: column;
     overflow: hidden;
 }
+
 .card_tecnologia circle {
     fill: none;
     /* stroke: url(#GradientColor); */
@@ -52,37 +53,43 @@ p {
     /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15), -6px -6px 10px -1px rgba(0, 0, 0, .15);   */
 }
 
-.card_js{
-    stroke:url(#GradientColor_js);
+.card_js {
+    stroke: url(#GradientColor_js);
 }
-.card_html{
+
+.card_html {
     stroke: url(#GradientColor_html);
 }
-.card_css{
+
+.card_css {
     stroke: url(#GradientColor_css);
 
 }
-.card_node{
+
+.card_node {
     stroke: url(#GradientColor_node);
 
 }
-.card_tecnologia:hover circle{
+
+.card_tecnologia:hover circle {
     animation: bordaProgresiva .7s linear forwards;
 }
 
-.card_tecnologia:hover h3, 
-.card_tecnologia:hover p{
+.card_tecnologia:hover h3,
+.card_tecnologia:hover p {
     color: var(--color8);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
 }
-.card_tecnologia svg  {
+
+.card_tecnologia svg {
+
     position: absolute;
     top: -5px;
     left: -5px;
 }
 
 @keyframes bordaProgresiva {
-    100%{
+    100% {
         stroke-dashoffset: 0;
     }
 }
@@ -101,17 +108,21 @@ p {
     margin-bottom: 20px;
 
 }
-.borde_card,h3,p{
+
+.borde_card,
+h3,
+p {
     z-index: 1;
     transition: .7s;
-    
+
 }
-.card_tecnologia:hover .borde_card{
+
+.card_tecnologia:hover .borde_card {
     box-shadow: 1px 1px 20px var(--color8);
 
 }
 
-.card_js:hover .borde_card{
+.card_js:hover .borde_card {
     box-shadow: 1px 1px 10px var(--color7);
 
 }
@@ -122,19 +133,22 @@ p {
     border-radius: 50%;
     position: relative;
     padding: 20px;
-    box-shadow:inset 1px 1px 5px var(--color7);
-   
+    box-shadow: inset 1px 1px 5px var(--color7);
+
 }
-.card_js:hover .img_tecnologia{
+
+.card_js:hover .img_tecnologia {
     box-shadow: inset 1px 1px 10px var(--color7);
 
 }
-.img_tecnologia img{
+
+.img_tecnologia img {
     width: 100%;
     height: 100%;
 
 }
-.animet_fundo{
+
+.animet_fundo {
     width: 100%;
     height: 0%;
     position: absolute;
@@ -142,40 +156,86 @@ p {
     z-index: -1px;
     transition: 1s;
 }
+
 .card_tecnologia:hover .animet_fundo {
     height: 100%;
 }
+
 .card_js .animet_fundo {
-    background-color:#F7DF1E;
-}
-.card_html .animet_fundo{
-    background-color:#E34C26;
-}
-.card_css .animet_fundo{
-    background-color:#264de4;
-}
-.card_node .animet_fundo{
-    background-color:#8CC84B;
+    background-color: #F7DF1E;
 }
 
-@media (max-width: 1250px){
+.card_html .animet_fundo {
+    background-color: #E34C26;
+}
 
-    .content_card_tecnologia{
+.card_css .animet_fundo {
+    background-color: #264de4;
+}
+
+.card_node .animet_fundo {
+    background-color: #8CC84B;
+}
+
+@media (max-width: 1030px) {
+
+    .content_card_tecnologia {
         gap: 40px;
         justify-content: space-evenly;
     }
-    .card_tecnologia{
+
+    .card_tecnologia {
         width: 45%;
     }
 
+    .animet_fundo {
+        height: 100%;
+    }
+    
+    .card_tecnologia h3,
+    .card_tecnologia p {
+        color: var(--color8);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+        margin-bottom: 15px;
+    }
 }
-@media (max-width: 600px){
-    .content_card_tecnologia{
+
+@media (max-width: 600px) {
+    .content_card_tecnologia {
         display: block;
     }
-    .card_tecnologia{
+
+    .card_tecnologia {
         width: 100%;
-        height: 300px;
-        margin-bottom: 30px;
+        /* height: 300px; */
+        margin-bottom: 25px;
     }
+
+}
+
+@media (max-width: 450px) {
+    .tecnologias {
+        background-color: var(--color7);
+    }
+
+    .card_tecnologia {
+        padding: 0px 15px;
+    }
+
+    .borde_card {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .tecnologias .title p,
+    .tecnologias .title h3{
+        color: var(--color8);
+        text-align: left;
+    }
+   
+    .card_html .img_tecnologia,
+    .card_css .img_tecnologia,
+    .card_node .img_tecnologia {
+        box-shadow: inset 1px 1px 5px var(--color8);
+    }
+
 }
