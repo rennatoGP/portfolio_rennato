@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    outline: none;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -27,7 +28,6 @@
     /* gradient */
     --gradiente: linear-gradient(to right, #ff0080, #ff8c00);
     --gradiente2: linear-gradient(to right, #48AFBE, #BE6C48);
-    --gradiente3: radial-gradient(circle, #ff8c00, #BE6C48);
 }
 
 body {
@@ -99,7 +99,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--gradiente2);
+    background: var(--gradiente);
     width: 100%;
     height: 50px;
     z-index: 100;
