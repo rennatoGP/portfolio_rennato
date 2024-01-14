@@ -118,7 +118,7 @@ p {
 }
 
 .card_tecnologia:hover .borde_card {
-    box-shadow: 1px 1px 20px var(--color8);
+    box-shadow: 1px 1px 10px var(--color8);
 
 }
 
@@ -138,7 +138,7 @@ p {
 }
 
 .card_js:hover .img_tecnologia {
-    box-shadow: inset 1px 1px 10px var(--color7);
+    box-shadow: inset 1px 1px 5px var(--color7);
 
 }
 
@@ -232,10 +232,4 @@ p {
         text-align: left;
     }
    
-    .card_html .img_tecnologia,
-    .card_css .img_tecnologia,
-    .card_node .img_tecnologia {
-        box-shadow: inset 1px 1px 5px var(--color8);
-    }
-
 }
