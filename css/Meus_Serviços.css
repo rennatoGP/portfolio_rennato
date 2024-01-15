@@ -57,6 +57,7 @@
     width: 100%;
 }
 .card_Services{
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -94,14 +95,12 @@
 
 @media (max-width: 1030px){
     .conten_Services{
-        padding:10px;
+        padding:10px 15px;
         margin-top: 20px;
-    }
-    .card_Services{
-        padding: 0 20px;
         flex-direction: column;
-        /* gap: 60px; */
+
     }
+    
     .card_item{
         width: 100%;
         display: flex;
@@ -154,9 +153,9 @@
     }
     
 }
-@media (max-width: 700px){
-    .card_Services{
-        padding: 10px;
+@media (max-width: 700px){   
+    .content_title{
+        text-align: left;
     }
 }
 
