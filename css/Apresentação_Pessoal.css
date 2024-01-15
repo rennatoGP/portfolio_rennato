@@ -136,16 +136,7 @@
 
 }
 
-@media (max-width: 1030px) {
-    .Content_Presention {
-        display: block;
-        
-    }
-    .contet_description{
-        margin-top: 20px;
-    }
 
-}
 
 /* ============ formatação do button ============= */
 .btn_information {
@@ -191,13 +182,17 @@
 }
 
 /* ============== responsivo Person Presentation =============== */
+
 @media (max-width: 1030px) {
     .Content_Presention {
         display: block;
+        padding: 15px;
     }
 
     .contet_description {
         padding: 5px;
+        margin-top: 20px;
+
     }
 
     .contet_description h1 {
@@ -208,6 +203,7 @@
 }
 
 @media (max-width: 500px) {
+   
     .borda_cicle h1{
         font-size: 30px;
     }

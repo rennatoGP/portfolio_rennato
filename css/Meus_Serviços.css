@@ -154,5 +154,9 @@
     }
     
 }
-
+@media (max-width: 700px){
+    .card_Services{
+        padding: 10px;
+    }
+}
 

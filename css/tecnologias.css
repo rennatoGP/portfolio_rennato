@@ -180,7 +180,9 @@ p {
 }
 
 @media (max-width: 1030px) {
-
+    .tecnologias{
+        margin-top: 80px;
+    }
     .content_card_tecnologia {
         gap: 40px;
         justify-content: space-evenly;
@@ -220,7 +222,9 @@ p {
 }
 
 @media (max-width: 450px) {
-    
+    .tecnologias{
+        padding: 15px ;
+    }
 
     .card_tecnologia {
         padding: 0px 15px;
