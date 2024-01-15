@@ -1,10 +1,8 @@
 .depoimentos {
     padding: 50px 0;
-    /* padding-bottom: 400px; */
     background: var(--gradiente);
     margin-top: 90px;
     margin-bottom: 100px;
-    /* height: 80vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,74 +25,64 @@
     }
 
     .swiper-container {
-        width: 1000px;
+        width: 85%;
         height: 400px;
         overflow: hidden;
         padding: 30px;
-        background-color:bisque;
+        background-color: bisque;
         position: relative;
 
-        .swiper-pagination{
-            color: black;
-        }
 
     }
 
-    .swiper-wrapper {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        /* =============FORMATAÇÃO DOS ITENS  .SWIPER-SLIDE ================= */
+    }
 
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .text_comentario {
+        width: 500px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: var(--color7);
+        border-radius: 15px 0 0 15px;
+        padding: 10px 20px;
 
- /* =============FORMATAÇÃO DOS ITENS  .SWIPER-SLIDE ================= */
-            .text_comentatio {
-                width: 60%;
-                height: 50%;
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-                background-color: var(--color7);
-                border-radius: 15px 0 0 15px;
-                padding: 10px 20px;
+        p,
+        h4 {
+            text-align: left;
+            color: var(--color8);
+        }
 
-                p,
-                h4 {
-                    text-align: left;
-                    color: var(--color8);
-                }
-
-                p {
-                    font-weight: lighter;
-                }
-
-
-            }
-
-            .use_img {
-                width: 30%;
-                height: 100%;
-                border-radius: 15px;
-                background-color: var(--color7);
-                overflow: hidden;
-            }
-
-            .use_img img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
+        p {
+            font-weight: lighter;
         }
     }
 
+    .use_img {
+        width: 300px;
+        height: 100%;
+        border-radius: 15px;
+        background-color: var(--color7);
+        overflow: hidden;
 
-    
-/*=================FORMATAÇÃO INTENS POST ================= */
+    }
+
+    .use_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*=================FORMATAÇÃO INTENS POST ================= */
 
     .text_post {
-        width: 40%;
+        width: 600px;
         display: flex;
         margin-top: 20px;
 
@@ -117,20 +105,77 @@
             padding: 7px;
             border-radius: 0 5px 5px 0;
             background-color: var(--color8);
+            cursor: pointer;
         }
     }
 
 
+    @media(max-width: 1030px) {
 
+        .swiper-container {
+            width: 100%;
+        }
 
+    }
 
+    @media(max-width: 900px) {
+        .swiper-container {
+            height: 60vh;
+        }
 
+        .swiper-slide {
+            flex-direction: column-reverse;
+        }
 
+        .text_comentario {
+            width: 80%;
+            /* height: 50%; */
+            border-radius: 12px;
 
+            /* padding: 10px 10px; */
+            /* gap: 0; */
+            p,
+            h3 {
+                font-size: 15px;
+            }
+        }
 
+        .use_img {
+            /* width: 300px; */
+            height: 70%;
+            border-radius: 15px 15px 0 0;
+        }
+        .text_post{
+            width: 80%;
+        }
 
+    }
 
+    @media(max-width: 600px) {
 
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+
+        .text_comentario {
+            width: 300px;
+            /* height: 60%; */
+            border-radius: 0 0 15px 15px;
+        }
+        .text_post{
+            width: 270px;
+        }
+    }
+
+    @media(max-width: 400px) {
+        
+        .text_comentario,
+        .use_img {
+            width: 270px;
+            height: 60%;
+        }
+    }
 
 
 

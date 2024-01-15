@@ -6,3 +6,17 @@ list.addEventListener('click', function () {
 })
 
 
+
+// =========script carrossel===========
+var swiper = new Swiper('.swiper-container', {
+   slidesPerView: 1,
+   spaceBetween: 35,
+   navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+   },
+   pagination: {
+       el: '.swiper-pagination',
+       clickable: true,
+   },
+});
