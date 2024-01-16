@@ -1,0 +1,83 @@
+.gmail {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.content_form {
+    margin-top: 20px;
+    width: 100%;
+    padding: 30px 15px;
+    /* height: 450px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color2);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  
+
+
+}
+.form h2 {
+    color: var(--color8);
+    margin-bottom: 20px;
+}
+
+.form input, .form
+textarea {
+    width: 400px;
+    padding: 10px;
+}
+
+.form button {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* border: 1px solid var(--color8); */
+    background-color: var(--color8);
+    border: none;
+
+}
+
+.form button:before {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background-color: rgb(113, 255, 4);
+    transition: .5s;
+
+}
+
+.for button:hover:before {
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 450px) {
+    .content_form{
+        padding:15px;
+
+    }
+    .form{
+        width: 100%;
+        input,
+        textarea,button{
+            width: 100%;
+        }
+    }
+   
+}
+

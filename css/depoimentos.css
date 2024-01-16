@@ -1,8 +1,7 @@
 .depoimentos {
     padding: 50px 0;
     background: var(--gradiente);
-    margin-top: 90px;
-    margin-bottom: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
