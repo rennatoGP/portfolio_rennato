@@ -93,7 +93,6 @@
 }
 
 /*  */
-
 .projeto-1 {
     background: url(../img/img_Projeto/Captura\ de\ tela_portfólio\ 2024-01-11\ 185817.png) no-repeat;
     background-position: left;
@@ -103,21 +102,33 @@
 }
 
 .projeto-2 {
+    background: url(/img/img_Projeto/Captura\ de\ tela-amnimt-button\ 2024-01-16\ 182852.png);
+    background-position: center;
+    background-size: cover;
     grid-column: 3;
     grid-row: 1;
 }
 
 .projeto-3 {
+    background: url(/img/img_Projeto/Captura\ de\ tela-menu-\ 2024-01-16\ 183323.png);
+    background-position: right;
+    background-size: cover;
     grid-column: 1;
     grid-row: 2;
 }
 
 .projeto-4 {
+    background: url(/img/img_Projeto/Captura\ de\ tela-after-\ 2024-01-16\ 184533.png) no-repeat;
+    background-position: center;
+    background-size: 500px 100%;
     grid-column: 2;
     grid-row: 2;
 }
 
 .projeto-5 {
+    background: url(/img/img_Projeto/Captura\ de\ tela-figma-\ 2024-01-16\ 185629.png);
+    background-position: center;
+    background-size: cover;
     grid-column: 3;
     grid-row: 2;
 }
