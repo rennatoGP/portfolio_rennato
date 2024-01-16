@@ -37,7 +37,7 @@
 }
 
 .projeto-1 {
-    background: url(/img/img_Projeto/Captura\ de\ tela_portfólio\ 2024-01-11\ 185817.png) no-repeat;
+    background: url(../img/img_Projeto/Captura\ de\ tela_portfólio\ 2024-01-11\ 185817.png) no-repeat;
     background-position: left;
     background-size: cover;
     grid-column: 1 / 3;
