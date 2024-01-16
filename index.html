@@ -19,12 +19,12 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="content">
             <div class="decrip_circle">
                 <div class="content_description">
                     <div class="descricao_header">
-                        <h2 class="ola">Óla eu sou
+                        <h2 class="ola">Óla eu sou,
                         </h2>
                         <h1>
                             Renato Machado
@@ -32,11 +32,7 @@
                         <h1 class="front-end">
                             <span>F</span><span>r</span><span>o</span><s>n</s><span>t</span><span>-</span><span>e</span><span>n</span><span>d</span>
                         </h1>
-                        <p>Sou um desenvolvedor web que adora criar sites bonitos e funcionais para pessoas que querem
-                            fazer a
-                            diferença no mundo.
-                            Atualmente sou aluno , onde estou aprendendo a criar sites bonitos e
-                            funcionais usando HTML, CSS, JavaScript e Node.</p>
+                        <p>Estudante de desenvolvimento web com habilidades em criar sites impactantes, além de conhecimentos em Adobe After Effects para design de animações dinâmicas. Habilidades abrangentes em HTML, CSS, JavaScript e Node.js.</p>
                     </div>
                     <div class="logo_img"></div>
                 </div>
@@ -50,19 +46,19 @@
         <div class="menu">
             <div class="menuResponsivo"></div>
             <ul class="menu-header">
-                <li style="--i:5;">Home</li>
-                <li style="--i:4;">Sobre</li>
-                <li style="--i:3;">Seviços</li>
-                <li style="--i:2;">Projetos</li>
-                <li style="--i:1;">Contato</li>
-                <li style="--i:0;"> Social</li>
+                <a href="#home"><li style="--i:5;">Home</li></a>
+                <a href="#sobre"><li style="--i:4;">Sobre</li></a>
+                <a href="#servicos"><li style="--i:3;">Seviços</li></a>
+                <a href="#projetos"><li style="--i:2;">Projetos</li></a>
+                <a href="#gmail"><li style="--i:1;">Contato</li></a> 
+                <a href="#social"> <li style="--i:0;">Social</li></a>
             </ul>
         </div>
     </section>
     <!-- //////////////////////////////////////// -->
     <main>
         <!-- Person Presentation -->
-        <sectipon class="Content_Presention">
+        <sectipon class="Content_Presention" id="sobre">
             <div class="content_animet_Presention">
                 <!-- <div class="animet_circle"> -->
                 <!-- <div class="circulo"> -->
@@ -98,7 +94,7 @@
             </div>
         </sectipon>
         <!--  my Services -->
-        <section class="Services">
+        <section class="Services" id="servicos">
             <div class="conten_Services">
                 <div class="content_title">
                     <h1>Meus <span>Serviços</span></h1>
@@ -135,7 +131,7 @@
             </div>
         </section>
         <!-- Project Front-Ende -->
-        <section class="content_Project">
+        <section class="content_Project" id="projetos">
             <h1>Meus<span> Projetos</span></h1>
             <div class=" Project">
                 <div class="projeto-1">
@@ -195,7 +191,7 @@
                 </div>
             </div>
         </section>
-        <section class="tecnologias">
+        <section class="tecnologias" >
             <div class="title">
                 <h3>Arte em Código:</h3>
                 <p>Revelando as Tecnologias por Trás do Meu Portfólio</p>
@@ -351,21 +347,20 @@
             </div>
 
         </section>
-        <section class="gmail">
+        <section class="gmail" id="gmail">
             <div class="content_form">
                 <form action="" class="form">
                     <h2>Contate-me</h2>
-
                     <input type="text" placeholder="Nome completo">
-                    <input type="text" placeholder="gmail">
+                    <input type="text" placeholder="Email">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <button>enviar</button>
                 </form>
             </div>
-
         </section>
     </main>
-    <footer>
+
+    <footer  id="social">
         <div class="footer">
             <ul class="redes_sociais">
                 <li><img src="img/icone_Social/facebook.png" alt="">
@@ -382,7 +377,7 @@
                 </li>
             </ul>
         </div>
-        <div class="copyright">&copy;<P>copyright </P><img src="img/icone_Social/pra-cima.png" alt=""></div>
+        <div class="copyright">&copy;<P>copyright </P><a href="#home"><img src="img/icone_Social/pra-cima.png" alt=""></a></div>
     </footer>
 
     <script src="https://unpkg.com/swiper@10.0.0/swiper-bundle.min.js"></script>

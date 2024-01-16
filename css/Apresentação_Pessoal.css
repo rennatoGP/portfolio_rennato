@@ -4,8 +4,8 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin-top: 50px;
     padding: 20px;
+    padding-top: 30vh;
 }
 
 .contet_description {
