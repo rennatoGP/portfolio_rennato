@@ -102,7 +102,7 @@
 }
 
 .projeto-2 {
-    background: url(/img/img_Projeto/Captura\ de\ tela-amnimt-button\ 2024-01-16\ 182852.png);
+    background: url(../img/img_Projeto/Captura\ de\ tela-amnimt-button\ 2024-01-16\ 182852.png);
     background-position: center;
     background-size: cover;
     grid-column: 3;
@@ -110,7 +110,7 @@
 }
 
 .projeto-3 {
-    background: url(/img/img_Projeto/Captura\ de\ tela-menu-\ 2024-01-16\ 183323.png);
+    background: url(../img/img_Projeto/Captura\ de\ tela-menu-\ 2024-01-16\ 183323.png);
     background-position: right;
     background-size: cover;
     grid-column: 1;
@@ -126,7 +126,7 @@
 }
 
 .projeto-5 {
-    background: url(/img/img_Projeto/Captura\ de\ tela-figma-\ 2024-01-16\ 185629.png);
+    background: url(../img/img_Projeto/Captura\ de\ tela-figma-\ 2024-01-16\ 185629.png);
     background-position: center;
     background-size: cover;
     grid-column: 3;
