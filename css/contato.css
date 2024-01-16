@@ -8,7 +8,6 @@
     margin-top: 20px;
     width: 100%;
     padding: 30px 15px;
-    /* height: 450px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +21,7 @@
 }
 .form h2 {
     color: var(--color8);
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
 }
 
 .form input, .form
@@ -41,6 +40,8 @@ textarea {
     /* border: 1px solid var(--color8); */
     background-color: var(--color8);
     border: none;
+    cursor: pointer;
+    font-size: 15px;
 
 }
 
@@ -56,7 +57,7 @@ textarea {
 
 }
 
-.for button:hover:before {
+.form button:hover:before {
     width: 100%;
 }
 
