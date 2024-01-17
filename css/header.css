@@ -25,8 +25,8 @@ html{
     --colorV2: #8A2BE2;
     --colorV3: #32CD32;
     /* backgorud suaves */
-    --backgroud1:rgba(102, 51, 255, 0.6);
-    --backgroud2:rgba(57, 69, 81, 0.6);
+    --backgroud1:rgba(102, 51, 255, 0.7);
+    --backgroud2:rgba(57, 69, 81, 0.7);
     /* gradient */
     --gradiente: linear-gradient(to right, #ff0080, #ff8c00);
     --gradiente2: linear-gradient(to right, #48AFBE, #BE6C48);
@@ -237,6 +237,9 @@ body {
     }
 
     .logo_portfolio {
+        display: none;
+    }
+    .descricao_header p{
         display: none;
     }
 

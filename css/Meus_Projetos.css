@@ -120,7 +120,7 @@
 .projeto-4 {
     background: url(/img/img_Projeto/Captura\ de\ tela-after-\ 2024-01-16\ 184533.png) no-repeat;
     background-position: center;
-    background-size: 500px 100%;
+    background-size: cover;
     grid-column: 2;
     grid-row: 2;
 }
