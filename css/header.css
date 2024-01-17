@@ -95,7 +95,11 @@ body {
     width: 140px;
     height: 140px;
     border-radius: 6px;
-    background-color: var(--color7);
+    /* background-color: var(--color7); */
+    background: url(../img/WhatsApp\ de\ 2024-01-17\ à\(s\)\ 14.57.33_b4f22dcd.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
 }
 
 /*=============================== formatão menu  ================  */

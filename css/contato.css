@@ -52,7 +52,7 @@ textarea {
     position: absolute;
     left: 0;
     z-index: -1;
-    background-color: rgb(113, 255, 4);
+    background-color: rgb(161, 255, 89);
     transition: .5s;
 
 }
