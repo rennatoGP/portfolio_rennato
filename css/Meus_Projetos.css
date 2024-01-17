@@ -37,7 +37,6 @@
     justify-content: center;
     transition: 1s;
     overflow: hidden;
-    /* opacity: .5; */
 }
 
 .abri_Pagina *,
@@ -54,6 +53,9 @@
     padding: 10px 20px;
     background: var(--gradiente);
     cursor: pointer;
+}
+[class^="abri_"] span a {
+    color: var(--color8);
 }
 
 
@@ -86,13 +88,11 @@
 }
 
 [class^="projeto-"] {
-    /* margin-bottom: 100px; */
     height: 400px;
     border-radius: 2px;
     background-color: var(--color1);
 }
 
-/*  */
 .projeto-1 {
     background: url(../img/img_Projeto/Captura\ de\ tela_portfólio\ 2024-01-11\ 185817.png) no-repeat;
     background-position: left;

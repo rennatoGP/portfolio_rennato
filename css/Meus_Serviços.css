@@ -1,6 +1,5 @@
 /* =========================== FORMATAÇÃO MEUS SERVICOS =========================== */
 .Services{
-  /* padding-bottom: 400px; */
   padding-top: 3vh;
 
 }
@@ -109,7 +108,6 @@
     .card_item{
         width: 100%;
         display: flex;
-        /* margin-bottom: 50px; */
     }
     .card_item:hover{
         transform: none;

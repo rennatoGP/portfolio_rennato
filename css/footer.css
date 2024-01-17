@@ -14,7 +14,7 @@
 .redes_sociais li{
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
 }
 .redes_sociais li img {
     width: 40px;
