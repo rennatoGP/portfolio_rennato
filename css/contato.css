@@ -1,23 +1,30 @@
 .gmail {
     margin: 50px 0;
-    padding: 7vh 0;
-    text-align: center;
-}
 
-.content_form {
-    margin-top: 20px;
-    width: 100%;
-    padding: 30px 15px;
+    background-color: var(--color7);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color2);
+}
+
+.content_form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
 }
 
 .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 8px;
+    padding: 30px;
+    /* background-color: aliceblue; */
+    background: var(--gradiente);
+
 }
 .form h2 {
     color: var(--color8);
@@ -27,6 +34,8 @@
 textarea {
     width: 400px;
     padding: 10px;
+    border: none;
+    /* background-color: var(--color7); */
 }
 
 .form button {
@@ -40,18 +49,6 @@ textarea {
     border: none;
     cursor: pointer;
     font-size: 15px;
-
-}
-
-.form button:before {
-    content: '';
-    width: 0;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    background-color: rgb(161, 255, 89);
-    transition: .5s;
 
 }
 

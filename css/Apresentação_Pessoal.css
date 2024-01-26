@@ -150,35 +150,18 @@
     border: none;
     outline: none;
     background: linear-gradient(to right, #ff8c00, #ff0080);
-
+}
+.btn_information:hover{
+    background: #ff0080;
 
 }
 
-.btn_information::before {
-    content: '';
-    width: 0;
+.btn_information a {
+    width: 100%;
     height: 100%;
-    display: block;
-    position: absolute;
-    left: -0px;
-    bottom: 0;
-    transition: .6s;
-    background-color: #ff8c00;
-}
+    font-size: 15px;
+    color: var(--color8);
 
-.btn_information:hover::before {
-    width: 100%;
-
-}
-
-.btn_information::after {
-    content: 'Consulte para mais informações';
-    width: 100%;
-    display: block;
-    position: relative;
-    color: white;
-    font-size: 16px;
-    transition: 1s;
 }
 
 /* ============== responsivo Person Presentation =============== */
