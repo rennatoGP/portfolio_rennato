@@ -15,12 +15,14 @@ html {
 :root {
     --color1: #ff3366;
     --color2: #6633ff;
+    --color3:#ff8c0097;
     --color7: #394551;
     --color8: #ffffff;
     /* haronia de tons quente */
     --colorQ1: #FF4500;
     --colorQ2: #FFD700;
     --colorQ3: #FF6347;
+    
     /* Contastre vibrante */
     --colorV1: #00CED1;
     --colorV2: #8A2BE2;
@@ -30,7 +32,8 @@ html {
     --backgroud2: rgba(57, 69, 81, 0.7);
     /* gradient */
     --gradiente: linear-gradient(to right, #ff0080, #ff8c0097);
-    --gradiente2: linear-gradient(to right, #48AFBE, #BE6C48);
+    --gradiente2: linear-gradient(to right, #9e37ff, #7e3b96);
+    
 }
 
 body {
@@ -43,15 +46,16 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     position: relative;
+    background: var(--gradiente2);
+    /* background-color: var(--color3); */
 }
 
 .content video {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-
 }
 
 /*=============================== formatão menu  ================  */
@@ -129,9 +133,7 @@ body {
 }
 
 @media (max-width: 900px) {
-    /* .content{
-        height: 90vh;
-    } */
+   
    
     .menu-header {
         display: block;
