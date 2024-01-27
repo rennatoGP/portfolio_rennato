@@ -15,14 +15,14 @@ html {
 :root {
     --color1: #ff3366;
     --color2: #6633ff;
-    --color3:#ff8c0097;
+    --color3: #ff8c0097;
     --color7: #394551;
     --color8: #ffffff;
     /* haronia de tons quente */
     --colorQ1: #FF4500;
     --colorQ2: #FFD700;
     --colorQ3: #FF6347;
-    
+
     /* Contastre vibrante */
     --colorV1: #00CED1;
     --colorV2: #8A2BE2;
@@ -33,7 +33,7 @@ html {
     /* gradient */
     --gradiente: linear-gradient(to right, #ff0080, #ff8c0097);
     --gradiente2: linear-gradient(to right, #9e37ff, #7e3b96);
-    
+
 }
 
 body {
@@ -48,14 +48,18 @@ body {
     align-items: center;
     justify-content: left;
     position: relative;
-    background: var(--gradiente2);
-    /* background-color: var(--color3); */
+    /* background: var(--gradiente2); */
+    background-color: var(--color2);
 }
 
-.content video {
+#intro-desktop {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+}
+
+#intro-social {
+    display: none;
 }
 
 /*=============================== formatão menu  ================  */
@@ -68,7 +72,6 @@ body {
     background-color: var(--colorV2);
     width: 100%;
     height: 10vh;
-    /* height: 50px; */
     z-index: 100;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
 }
@@ -133,8 +136,8 @@ body {
 }
 
 @media (max-width: 900px) {
-   
-   
+
+
     .menu-header {
         display: block;
         padding: 0;
@@ -184,9 +187,16 @@ body {
 
 }
 
-/* @media (max-width: 750px) {
-     .content{
-        height: 80vh;
-     }
+@media (max-width: 650px) {
+   
+    #intro-desktop {
+        display: none;
+    }
 
-} */
+    #intro-social {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
