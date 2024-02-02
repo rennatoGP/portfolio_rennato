@@ -22,16 +22,13 @@
         }
 
     }
-
     .swiper-container {
         width: 85%;
         height: 400px;
         overflow: hidden;
         padding: 30px;
-        background-color: bisque;
+        background-color: var(--color6R);
         position: relative;
-
-
     }
 
     .swiper-slide {

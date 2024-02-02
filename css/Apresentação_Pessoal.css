@@ -103,7 +103,7 @@
     padding: 0 20px;
     font-size: 40px;
     position: relative;
-    color: var(--color1);
+    color: var(--color7);
     font-weight: bolder;
     background-color: var(--color8);
 }
@@ -149,10 +149,11 @@
     overflow: hidden;
     border: none;
     outline: none;
-    background: linear-gradient(to right, #ff8c00, #ff0080);
+    background:var(--gradiente);
+    transition: .6s;
 }
 .btn_information:hover{
-    background: #ff0080;
+    background: var(--color2);
 
 }
 

@@ -7,7 +7,7 @@
 .content_Project {
     padding: 0 30px;
     padding-top: 20vh;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -31,7 +31,7 @@
 .abri_github {
     width: 100%;
     height: 00%;
-    color: var(--color8);
+    color: var(--color7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,17 +45,17 @@
 }
 
 .abri_Pagina {
-    background-color: var(--backgroud1);
+    background-color: var(--color1R);
 }
 
 .abri_Pagina span,
 .abri_github span {
     padding: 10px 20px;
-    background: var(--gradiente);
+    background: var(--color8);
     cursor: pointer;
 }
 [class^="abri_"] span a {
-    color: var(--color8);
+    color: var(--color7);
 }
 
 
@@ -67,7 +67,7 @@
 .abri_github {
     position: absolute;
     bottom: 0;
-    background-color: var(--backgroud2);
+    background-color: var(--color6R);
 }
 
 [class^="projeto-"]:hover .abri_github {

@@ -160,19 +160,20 @@ p {
 }
 
 .card_js .animet_fundo {
-    background-color: #F7DF1E;
+    background-color: #B9B966;
 }
 
 .card_html .animet_fundo {
-    background-color: #E34C26;
+    background-color: #B96666;
 }
 
 .card_css .animet_fundo {
-    background-color: #264de4;
+    background-color: #6674B9;
 }
 
 .card_node .animet_fundo {
-    background-color: #8CC84B;
+    background-color: #66B984
+    ;
 }
 
 @media (max-width: 1030px) {

@@ -11,28 +11,22 @@
 html {
     scroll-behavior: smooth;
 }
-
 :root {
-    --color1: #ff3366;
-    --color2: #6633ff;
-    --color3: #ff8c0097;
+    --color1R: #66B9B9; /* Azul acinzentado */
+    --color2R: #66B974; /* Verde suave */
+    --color3R: #B97466; /* Rosa claro */
+    --color4R: #6666B9; /* Azul arroxeado */
+    --color5R: #B96666; /* Vermelho suave */
+    --color6R: #6666B9; /* Azul arroxeado */
+    --gradienteR: linear-gradient(to right, var(--color1R), var(--color2R), var(--color3R), var(--color4R), var(--color5R), var(--color6R));
+  }
+    
+:root {
+    --color1: var(--color3R);
+    --color2: var(--color4R);
     --color7: #394551;
     --color8: #ffffff;
-    /* haronia de tons quente */
-    --colorQ1: #FF4500;
-    --colorQ2: #FFD700;
-    --colorQ3: #FF6347;
-
-    /* Contastre vibrante */
-    --colorV1: #00CED1;
-    --colorV2: #8A2BE2;
-    --colorV3: #32CD32;
-    /* backgorud suaves */
-    --backgroud1: rgba(102, 51, 255, 0.7);
-    --backgroud2: rgba(57, 69, 81, 0.7);
-    /* gradient */
-    --gradiente: linear-gradient(to right, #ff0080, #ff8c0097);
-    --gradiente2: linear-gradient(to right, #9e37ff, #7e3b96);
+    --gradiente: var(--color1R);
 
 }
 
@@ -43,19 +37,23 @@ body {
 /* ======================= header ==============*/
 .content {
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
     position: relative;
-    /* background: var(--gradiente2); */
-    background-color: var(--color2);
+  
+}
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #intro-desktop {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* height: 80%; */
+    /* object-fit: ; */
+    background-position: top;
 }
 
 #intro-social {
@@ -69,7 +67,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--colorV2);
+    background-color: var(--color1R);
     width: 100%;
     height: 10vh;
     z-index: 100;

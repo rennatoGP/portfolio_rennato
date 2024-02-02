@@ -1,7 +1,6 @@
 .gmail {
     margin: 50px 0;
-
-    background-color: var(--color7);
+    background-color: var(--color4R);
     height: 100vh;
     display: flex;
     align-items: center;
