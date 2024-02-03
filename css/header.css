@@ -18,15 +18,16 @@ html {
     --color4R: #6666B9; /* Azul arroxeado */
     --color5R: #B96666; /* Vermelho suave */
     --color6R: #6666B9; /* Azul arroxeado */
+    --color7: #394551;
+    --color8: #ffffff;
     --gradienteR: linear-gradient(to right, var(--color1R), var(--color2R), var(--color3R), var(--color4R), var(--color5R), var(--color6R));
   }
     
 :root {
     --color1: var(--color3R);
     --color2: var(--color4R);
-    --color7: #394551;
-    --color8: #ffffff;
-    --gradiente: var(--color1R);
+    
+    /* --gradiente: var(--color1R); */
 
 }
 
@@ -48,18 +49,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
-#intro-desktop {
-    width: 100%;
-    /* height: 80%; */
-    /* object-fit: ; */
-    background-position: top;
-}
-
-#intro-social {
-    display: none;
-}
-
 /*=============================== formatão menu  ================  */
 .content_menu {
     position: sticky;
@@ -187,14 +176,7 @@ body {
 
 @media (max-width: 650px) {
    
-    #intro-desktop {
-        display: none;
-    }
-
-    #intro-social {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+   .content img{
+    height: 100vh;
+   }
 }

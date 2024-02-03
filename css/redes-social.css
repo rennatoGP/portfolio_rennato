@@ -6,7 +6,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* gap: 30px; */
     position: relative;
 }
 
@@ -17,7 +16,6 @@
 .redes_sociais li{
     display: flex;
     align-items: center;
-    /* gap: 10px; */
 }
 .redes_sociais li img {
     width: 40px;
@@ -31,7 +29,6 @@
     padding: 2px 4px;
     border-radius: 5px;
     color: var(--color8);
-    /* background-color: var(--color8); */
 }
 
 
@@ -39,8 +36,7 @@
     .contet-social{
         height: 100%;
         padding: 30px;
-        /* flex-direction: column-reverse; */
-        /* gap: 30px; */
+      
     }
 
     .redes_sociais {

@@ -1,5 +1,5 @@
 .content_Project h1 span {
-    background: var(--gradiente);
+    background: var(--color1R);
     background-clip: text;
     color: transparent;
 }

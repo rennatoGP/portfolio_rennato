@@ -22,8 +22,7 @@
     gap: 10px;
     border-radius: 8px;
     padding: 30px;
-    /* background-color: aliceblue; */
-    background: var(--gradiente);
+    background: var(--color1R);
 
 }
 .form h2 {

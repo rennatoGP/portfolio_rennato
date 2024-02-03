@@ -1,6 +1,6 @@
 .depoimentos {
     padding: 50px 0;
-    background: var(--gradiente);
+    background: var(--color1R);
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -27,8 +27,9 @@
         height: 400px;
         overflow: hidden;
         padding: 30px;
-        background-color: var(--color6R);
+        background-color: var(--color8);
         position: relative;
+        box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .4);
     }
 
     .swiper-slide {
@@ -75,34 +76,6 @@
         object-fit: cover;
     }
 
-    /*=================FORMATAÇÃO INTENS POST ================= */
-
-    .text_post {
-        width: 600px;
-        display: flex;
-        margin-top: 20px;
-
-        input {
-            width: 100%;
-            background-color: transparent;
-            border: 1px solid var(--color8);
-            border-radius: 5px 0 0 5px;
-            color: var(--color8);
-            text-align: center;
-        }
-
-        input::placeholder {
-            color: var(--color8);
-        }
-
-        button {
-            border: none;
-            padding: 7px;
-            border-radius: 0 5px 5px 0;
-            background-color: var(--color8);
-            cursor: pointer;
-        }
-    }
 
 
     @media(max-width: 1030px) {
