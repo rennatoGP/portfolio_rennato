@@ -41,6 +41,7 @@ textarea {
     padding: 15px;
     position: relative;
     display: flex;
+    /* color: var(--color7); */
     align-items: center;
     justify-content: center;
     z-index: 1;
@@ -49,10 +50,6 @@ textarea {
     cursor: pointer;
     font-size: 15px;
 
-}
-
-.form button:hover:before {
-    width: 100%;
 }
 
 @media (max-width: 450px) {
